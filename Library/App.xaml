@@ -8,6 +8,9 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="StyleMainWindow.xaml"/>
                 <ResourceDictionary Source="StyleCaptionButton.xaml"/>
+                <ResourceDictionary Source="StyleButton.xaml"/>
+                <ResourceDictionary Source="StyleComboBox.xaml"/>
+                <ResourceDictionary Source="StyleColors.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

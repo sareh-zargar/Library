@@ -34,6 +34,8 @@
                         <ToggleButton x:Name="buttonClose" Grid.Column="2" Grid.Row="0"  Margin="0,5,5,0" Content="X" WindowChrome.IsHitTestVisibleInChrome="True" Style="{DynamicResource ToggleButtonStyle1}"/>
                         <TextBlock x:Name="windowTitle" Text="LibraryManagement" Grid.Column="0" Grid.Row="0"/>
                         <local:UserControlLibrary Grid.Column="0" Grid.Row="1"/>
+                        <local:UserControlShelf Grid.Column="1" Grid.Row="1"/>
+                        <local:UserControlBook Grid.Column="2" Grid.Row="1"/>
                     </Grid>
                 </ControlTemplate>
             </Setter.Value>
