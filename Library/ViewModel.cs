@@ -16,15 +16,13 @@ namespace Library
     {
         public ObservableCollection<Model.Library> libraries = new ObservableCollection<Model.Library>();
         
-       public ObservableCollection<Model.Shelf> shelves { get; set; }
-        public ObservableCollection<Model.Book> books { get; set; }
-
-        public StreamReader _textStreamReader;
-
         public ViewModel()
         {
             XmlDocument doc = new XmlDocument();
-            doc.Load(@"D:\libraries.xml");
+            //doc.Load(@"D:\libraries.xml");
+            Assembly assembly = Assembly.GetExecutingAssembly();
+            Stream s = assembly.GetManifestResourceStream(@"Library.Resources.libraries.xml");
+            doc.Load(s);
             XmlNodeList list=doc.GetElementsByTagName("Library");
             
             for (int i = 0; i <list.Count ; i++)
