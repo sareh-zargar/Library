@@ -24,5 +24,10 @@ namespace Library
         {
             InitializeComponent();
         }
+
+        private void Load_Loaded(object sender, RoutedEventArgs e)
+        {
+            ViewModel viewModel = new ViewModel();
+        }
     }
 }

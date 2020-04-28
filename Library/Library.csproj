@@ -56,6 +56,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Model\Book.cs" />
+    <Compile Include="Model\Library.cs" />
+    <Compile Include="Model\Shelf.cs" />
     <Compile Include="UserControlBook.xaml.cs">
       <DependentUpon>UserControlBook.xaml</DependentUpon>
     </Compile>
@@ -65,6 +68,7 @@
     <Compile Include="UserControlShelf.xaml.cs">
       <DependentUpon>UserControlShelf.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -136,6 +140,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\libraries.xml" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
