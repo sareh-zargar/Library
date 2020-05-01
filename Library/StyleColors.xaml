@@ -1,8 +1,0 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:local="clr-namespace:Library">
-    <SolidColorBrush x:Key="NormalBackground" Color="BurlyWood"/>
-    <SolidColorBrush  x:Key="PressedBackground" Color="Aquamarine" />
-    <SolidColorBrush x:Key="BorderBrush" Color="DarkTurquoise"/>
-
-</ResourceDictionary>

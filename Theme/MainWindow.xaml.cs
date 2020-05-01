@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Library
+namespace Theme
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -25,7 +25,9 @@ namespace Library
             InitializeComponent();
         }
 
-        
-        
+        private void ToggleButton_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

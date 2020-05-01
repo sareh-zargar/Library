@@ -5,8 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Library"
         mc:Ignorable="d"
-        Title="MainWindow" Style="{DynamicResource StyleManinWindow}" Loaded="Load_Loaded" >
+        Title="MainWindow" Style="{DynamicResource StyleManinWindow}">
     <Grid>
-       
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <local:UserControlLibrary Grid.Column="0" 
+                                  Grid.Row="1" 
+                                  Margin="5,0,7,5"/>
+        
+        <local:UserControlShelf Grid.Column="1" 
+                                Grid.Row="1" 
+                                Margin="7,0,7,5"/>
+        
+        <local:UserControlBook Grid.Column="2" 
+                               Grid.Row="1" 
+                               Margin="7,0,5,5"/>
     </Grid>
 </Window>
