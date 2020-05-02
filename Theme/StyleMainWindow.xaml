@@ -1,0 +1,101 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Theme">
+    <Style x:Key="StyleManinWindow" TargetType="Window">
+        <Setter Property="Height" Value="400"/>
+        <Setter Property="Width" Value="950"/>
+        <Setter Property="MinWidth" Value="950"/>
+        <Setter Property="MinHeight" Value="330"/>
+        <Setter Property="WindowStyle" Value="None"/>
+        <Setter Property="WindowChrome.WindowChrome">
+            <Setter.Value>
+                <WindowChrome ResizeBorderThickness="5"
+                              CaptionHeight="30"
+                              CornerRadius="10"
+                              GlassFrameThickness="0"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Window">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Border Grid.Row="0" 
+                                Grid.RowSpan="2" 
+                                Grid.Column="0" 
+                                Grid.ColumnSpan="3" 
+                                Background="{DynamicResource 
+                            StyleColorWindowBackground}">
+                            <ContentPresenter/>
+                        </Border>
+                        <ToggleButton x:Name="buttonMinimized" 
+                                      Grid.Column="2" 
+                                      Grid.Row="0" 
+                                      Margin="0,0,60,0" 
+                                      Content="-" 
+                                      VerticalContentAlignment="Bottom" 
+                                      FontSize="20" 
+                                      Foreground="{DynamicResource 
+                            StyleColorForground}" 
+                                 WindowChrome.IsHitTestVisibleInChrome="True" 
+                                      Style="{DynamicResource 
+                            ToggleButtonStyle1}"/>
+                        <ToggleButton x:Name="buttonMaximized" 
+                                      Grid.Column="2" 
+                                      Grid.Row="0" 
+                                      Margin="0,0,35,0" 
+                                      Content="#" 
+                                      FontSize="14" 
+                                      Foreground="{DynamicResource 
+                            StyleColorForground}" 
+                                  WindowChrome.IsHitTestVisibleInChrome="True" 
+                                      Style="{DynamicResource 
+                            ToggleButtonStyle1}"/>
+                        <ToggleButton x:Name="buttonClose" 
+                                      Grid.Column="2" 
+                                      Grid.Row="0"  
+                                      Margin="0,0,10,0" 
+                                      Content="X" 
+                                      FontSize="14" 
+                                      Foreground="{DynamicResource 
+                            StyleColorForground}" 
+                                  WindowChrome.IsHitTestVisibleInChrome="True" 
+                                      Style="{DynamicResource 
+                            ToggleButtonStyle1}"/>
+                        <Label x:Name="windowTitle" 
+                               Content="LibraryManagement" 
+                               Grid.Column="0" 
+                               Grid.Row="0" 
+                               Foreground="{DynamicResource 
+                            StyleColorButtonsBackground}"
+                               VerticalContentAlignment="Center"
+                               FontSize="12"/>
+                       
+                    </Grid>
+                    <ControlTemplate.Triggers>
+                        <Trigger SourceName="buttonMinimized" 
+                                 Property="IsChecked" 
+                                 Value="True">
+                            <Setter Property="WindowState" 
+                                    Value="Minimized"/>
+                        </Trigger>
+                        <Trigger SourceName="buttonMaximized" 
+                                 Property="IsChecked" 
+                                 Value="True">
+                            <Setter Property="WindowState" 
+                                    Value="Maximized"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

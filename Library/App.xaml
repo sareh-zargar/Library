@@ -6,11 +6,17 @@
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="StyleMainWindow.xaml"/>
-                <ResourceDictionary Source="StyleCaptionButton.xaml"/>
-                <ResourceDictionary Source="StyleButton.xaml"/>
-                <ResourceDictionary Source="StyleComboBox.xaml"/>
-                <ResourceDictionary Source="StyleColors.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Theme;component/StyleMainWindow.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Theme;component/StyleColor.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Theme;component/StyleCaptionButton.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Theme;component/StyleButton.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Theme;component/StyleComboBox.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Theme;component/StyleSlider.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Theme;component/StyleTextBox.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Theme;component/StyleTextBlock.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Theme;component/StyleUserControlBorder.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Theme;component/StyleLabel.xaml"/>
+                <ResourceDictionary Source="pack://application:,,,/Theme;component/StyleCheckBox.xaml"/>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Application.Resources>

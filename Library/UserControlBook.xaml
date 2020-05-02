@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:Library"
              mc:Ignorable="d" 
               d:DesignHeight="350" d:DesignWidth="300" >
-    <Grid Background="#FF9D4C4C">
+    <Grid >
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="2*"/>
             <ColumnDefinition Width="4*"/>
@@ -23,50 +23,69 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Grid.Resources>
-            <Style TargetType="TextBlock">
-                <Setter Property="FontSize" Value="14"/>
-                <Setter Property="TextAlignment" Value="Center"/>
-                <Setter Property="HorizontalAlignment" Value="Stretch"/>
-                <Setter Property="VerticalAlignment" Value="Center"/>
-                <Setter Property="Foreground" Value="White"/>
-            </Style>
-            <Style TargetType="TextBox">
-                <Setter Property="HorizontalAlignment" Value="Stretch"/>
-                <Setter Property="VerticalAlignment" Value="Center"/>
-                <Setter Property="Background" Value="#FFD1B1B1"/>
-            </Style>
-            <Style TargetType="ComboBox">
-                <Setter Property="HorizontalAlignment" Value="Stretch"/>
-                <Setter Property="VerticalAlignment" Value="Center"/>
-                <Setter Property="Background" Value="#FFD1B1B1"/>
-            </Style>
+        
+        <Border Grid.Row="0" 
+                Grid.RowSpan="8" 
+                Grid.Column="0" 
+                Grid.ColumnSpan="3" 
+                Style="{DynamicResource BorderStyle1}"/>
+        
+        <Label Content="Book Information" 
+               Grid.Column="0" 
+               Grid.ColumnSpan="3" 
+               Grid.Row="0" Style="{DynamicResource LabelStyle1}" />
+        
+        <TextBlock Text="Name"       
+                   Grid.Row="1" 
+                   Grid.Column="0" 
+                   Style="{DynamicResource TextBlockStyle1}"/>
+        
+        <TextBlock Text="Author"    
+                   Grid.Row="2" 
+                   Grid.Column="0" 
+                   Style="{DynamicResource TextBlockStyle1}"/>
+        
+        <TextBlock Text="Publisher" 
+                   Grid.Row="3" 
+                   Grid.Column="0" 
+                   Style="{DynamicResource TextBlockStyle1}"/>
+        
+        <TextBlock Text="Genre"       
+                   Grid.Row="4" 
+                   Grid.Column="0" 
+                   Style="{DynamicResource TextBlockStyle1}"/>
+        
+        <TextBox  Grid.Column="1" 
+                  Grid.Row="1" 
+                  Style="{DynamicResource TextBoxStyle1}"  />
+        
+        <TextBox  Grid.Column="1" 
+                  Grid.Row="2" 
+                  Style="{DynamicResource TextBoxStyle1}"/>
+        
+        <TextBox  Grid.Column="1" 
+                  Grid.Row="3" 
+                  Style="{DynamicResource TextBoxStyle1}"/>
+        
+        <ComboBox  Grid.Column="1" 
+                   Grid.Row="4" 
+                   Style="{DynamicResource ComboBoxStyle}"/>
 
-        </Grid.Resources>
 
-        <Border Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" BorderThickness="3" BorderBrush="#FF9D4C4C" CornerRadius="30" Background="#FFD1B1B1"/>
-        <Label Content="Book Information"     FontSize="16"  VerticalAlignment="Center"  HorizontalAlignment="Center" VerticalContentAlignment="Center" Foreground="#FF691111" Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="0" />
-        <TextBlock Text="Title"       Grid.Row="1" Grid.Column="0"/>
-        <TextBlock Text="Authors"    Grid.Row="2" Grid.Column="0"/>
-        <TextBlock Text="Publisher" Grid.Row="3" Grid.Column="0"/>
-        <TextBlock Text="ShelfName"       Grid.Row="4" Grid.Column="0"/>
-        <TextBlock Text="LibraryName"       Grid.Row="5" Grid.Column="0"/>
-        <TextBlock Text="PageCount"       Grid.Row="6" Grid.Column="0"/>
-        <TextBox  Grid.Column="1" Grid.Row="1"  />
-        <TextBox  Grid.Column="1" Grid.Row="2" />
-        <TextBox  Grid.Column="1" Grid.Row="3" />
-        <ComboBox  Grid.Column="1" Grid.Row="4" />
-        <ComboBox  Grid.Column="1" Grid.Row="5" />
-        <Slider HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="1" Grid.Row="6" Value="370" Minimum="20" Maximum="1000">
-            <Slider.Resources>
-                <Style TargetType="Thumb">
-                    <Setter Property="Background" Value="#FFD1B1B1"/>
-                </Style>
-            </Slider.Resources>
-        </Slider>
-        <Grid Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="3">
-            <Button  VerticalAlignment="Center"  HorizontalAlignment="Left" Margin="20,0,0,0" Style="{DynamicResource StyleButton}"/>
-            <Button  VerticalAlignment="Center" HorizontalAlignment="Right" Margin="0,0,20,0" Style="{DynamicResource StyleButton}"/>
+        <Grid Grid.Row="7" 
+              Grid.Column="0" 
+              Grid.ColumnSpan="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Content="save" 
+                    Grid.Column="0" 
+                    Style="{DynamicResource ButtonStyle1}"/>
+            
+            <Button  Content="Cancel" 
+                     Grid.Column="1" 
+                     Style="{DynamicResource ButtonStyle1}"/>
         </Grid>
     </Grid>
 </UserControl>

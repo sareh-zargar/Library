@@ -1,0 +1,22 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Theme">
+    <SolidColorBrush x:Key="StyleColorWindowBackground" Color="#FF2B2727"/>
+    <SolidColorBrush x:Key="StyleColorControlsBackground" Color="DarkGray"/>
+    <SolidColorBrush x:Key="StyleColorControlsBackground2" Color="#FF665E5E"/>
+    <SolidColorBrush x:Key="StyleColorWindowTitle" Color="Green"/>
+    <SolidColorBrush x:Key="StyleColorButtonsBackground" Color="#FF09F709"/>
+    <SolidColorBrush x:Key="StyleColorUserControlsBackground" 
+                     Color="#FF571F1F"/>
+    <SolidColorBrush x:Key="StyleColorForground" Color="White"/>
+    <SolidColorBrush x:Key="StyleColorButtonBorder" Color="Green"/>
+    <LinearGradientBrush x:Key="StyleGradientColor" 
+                         StartPoint="0,0" 
+                         EndPoint="1,0">
+        <GradientStop Color="#FF571F1F" Offset="0.801"/>
+        <GradientStop Color="#FF7C2E2E" Offset="0.6"/>
+        <GradientStop Color="#FFA84040" Offset="0.3"/>
+        <GradientStop Color="#FFCF4C4C" />
+    </LinearGradientBrush>
+
+</ResourceDictionary>
