@@ -637,6 +637,10 @@
         <Setter Property="IsSnapToTickEnabled" Value="True"/>
         <Setter Property="Value" Value="3"/>
         <Setter Property="AutoToolTipPlacement" Value="None"/>
+        <Setter Property="Width" Value="180"/>
+        <Setter Property="Height" Value="25"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+        <Setter Property="HorizontalAlignment" Value="center"/>
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type Slider}">
