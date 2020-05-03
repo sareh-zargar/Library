@@ -18,14 +18,21 @@
         </Grid.RowDefinitions>
         <local:UserControlLibrary Grid.Column="0" 
                                   Grid.Row="1" 
-                                  Margin="5,0,7,5"/>
-        
+                                  Margin="5,2,5,2"
+                                  VerticalAlignment="Stretch"
+                                  HorizontalAlignment="Stretch"/>
+
+
         <local:UserControlShelf Grid.Column="1" 
                                 Grid.Row="1" 
-                                Margin="7,0,7,5"/>
-        
+                                Margin="5,2,5,2"
+                                VerticalAlignment="Stretch"
+                                HorizontalAlignment="Stretch"/>
+
         <local:UserControlBook Grid.Column="2" 
                                Grid.Row="1" 
-                               Margin="7,0,5,5"/>
+                               Margin="5,2,5,2"
+                               VerticalAlignment="Stretch"
+                               HorizontalAlignment="Stretch"/>
     </Grid>
 </Window>

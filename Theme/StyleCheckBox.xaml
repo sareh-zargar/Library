@@ -42,9 +42,10 @@
         <Setter Property="BorderThickness" Value="1"/>
         <Setter Property="VerticalAlignment" Value="Center"/>
         <Setter Property="HorizontalAlignment" Value="Left"/>
-        <Setter Property="Height" Value="25"/>
-        <Setter Property="Width" Value="180"/>
-        <Setter Property="FontSize" Value="14"/>
+        <!--<Setter Property="Height" Value="25"/>
+        <Setter Property="Width" Value="180"/>-->
+        <Setter Property="FontSize" Value="12"/>
+        <Setter Property="Margin" Value="5"/>
         <Setter Property="Foreground" 
                 Value="{DynamicResource StyleColorForground}"/>
         <Setter Property="FocusVisualStyle" 
